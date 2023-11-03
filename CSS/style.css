@@ -5,7 +5,7 @@ body {
     height: 100vh;
     font-family: Roboto, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.4;
     background-color: #1b1b32;
     color: whitesmoke;
@@ -21,13 +21,20 @@ div {
 label {
     display: flex;
     align-items: center;
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem 0;
 }
 
 h1, p {
     margin: 1em auto;
     text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#title {
+    font-size: 36px;
+    font-weight: bold;
 }
 
 form {
@@ -35,24 +42,47 @@ form {
     max-width: 500px;
     min-width: 300px;
     margin: auto;
+    border-radius: 0.25rem;
+    padding: 2.5rem 0.65rem;
 }
 
-input, select, textarea {
-    margin: 0;
+input, button, select, textarea {
     font-size: inherit;
     font-size: inherit;
-    line-height: inherit;
+    min-height: 1.4em;    
 }
+input, textarea {
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
 
-.input-radio {
+  .input-radio, .input-checkbox {
     display: inline-block;
-    margin-right: 0.625rem;
-    min-height: 1.25rem;
-    min-width: 1.25rem;
-}
+    margin-right: 0.65rem;
+    min-height: 1rem;
+    min-width: 1rem;
+  }
 
-.form-control {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-}
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.5rem;
+    resize: vertical;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .submit-button {
+    background-color: #1b1b32;
+    color: aliceblue;
+    display: block;
+    width: 50%;
+    border-color: aliceblue;
+    border-radius: 1.5px;
+    min-height: 2rem;
+    margin: 1em auto;
+  }
+
+
